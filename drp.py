@@ -94,7 +94,8 @@ ICONS = {
     'scss,sass': 'sass',
     'nim': 'nim',
     'nite,nitecode,nightcode,nc': 'nitecode',
-    'p6,pm6,pod6,raku,rakumod,rakudoc,rakutest,nqp,crotmp': 'raku'
+    'p6,pm6,pod6,raku,rakumod,rakudoc,rakutest,nqp,crotmp': 'raku',
+    'zig': 'zig'
 }
 
 # Scopes we can/should fallback to
@@ -126,7 +127,8 @@ SCOPES = {
     'sass',
     'nim',
     'nitecode',
-    'raku'
+    'raku',
+    'zig'
 }
 
 
@@ -153,7 +155,7 @@ def get_icon(file, ext, _scope):
     if file == 'LICENSE': icon = 'license'
     logger.debug('Using icon "%s" for file %s (scope: %s)', icon, file, main_scope)
 
-    return 'https://raw.githubusercontent.com/Snazzah/SublimeDiscordRP/master/icons/lang-%s.png' % icon
+    return 'https://raw.githubusercontent.com/arthurknp/SublimeDiscordRP/master/icons/lang-%s.png' % icon
 
 
 def yield_subscopes(scope):
